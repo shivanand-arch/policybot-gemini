@@ -150,7 +150,7 @@ st.markdown("""
 # Configuration
 # ---------------------------------------------------------------------------
 GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", os.environ.get("GOOGLE_API_KEY", ""))
-MODEL_NAME = os.environ.get("MODEL_NAME", "gemini-2.5-flash-preview-05-20")
+MODEL_NAME = os.environ.get(MODEL_NAME = os.environ.get("MODEL_NAME", "gemini-3-flash-preview")
 
 if not GOOGLE_API_KEY:
     st.error("GOOGLE_API_KEY not set. Add it in Streamlit Secrets (Settings → Secrets).")
